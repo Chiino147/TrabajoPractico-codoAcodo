@@ -1,0 +1,316 @@
+/*Header */
+
+header {
+    width: 100%;
+    background-color: #353a40;
+    display: flex;
+    justify-content: flex-start;
+    font-family: arial;
+    align-items: center;
+}
+
+nav {
+    justify-items: right;
+}
+
+.menu a {
+    padding: 1px;
+    margin-left: 56px;
+}
+
+#logo {
+    display: flex;
+    margin-right: 45px;
+    color: #ffffff;
+    font-size: smaller;
+}
+
+#logo img {
+    width: 100px;
+    padding-left: 40px;
+}
+
+
+/*Div descripcion*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#descripcion {
+    height: 300px;
+    display: flex;
+    color: #ffffff;
+    width: 100%;
+    background-image: url(../img/Lugares/hawaii2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#descripcion div {
+    text-align: justify;
+    font-family: sans-serif;
+    width: 30%;
+    text-align: right;
+    padding-left: 880px;
+}
+
+nav a {
+    font-size: medium;
+    padding-right: 50px;
+    margin: 3px;
+    text-align: right;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/*Div separador*/
+
+.separador div {
+    text-align: center;
+}
+
+.separador p {
+    font-family: 'Times New Roman';
+}
+
+.separador h2 {
+    font-family: 'Lucida Sans';
+}
+
+
+/*Tarjetas*/
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 800px;
+    margin: auto;
+}
+
+
+/*tarjetas oradores*/
+
+.tarjeta {
+    flex-direction: row;
+    justify-content: center;
+    width: 300px;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 2%;
+    margin: 5px;
+}
+
+.tarjeta img {
+    width: 100%;
+}
+
+.informacion-tarjeta h3 {
+    padding: 0px;
+    margin-top: 4px;
+}
+
+.presentacion-tarjeta {
+    display: flex;
+    text-align: center;
+    text-align: justify;
+    padding: 5px;
+}
+
+.presentacion-tarjeta h3 {
+    text-align: left;
+}
+
+.informacion-tarjeta {
+    text-align: center;
+    text-align: justify;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+
+/*Div Cononce mas*/
+
+#conoceMas {
+    display: flex;
+    flex-direction: row;
+    /*
+    background-color: #353a40;
+    color: #ffffff;*/
+}
+
+#conoceMas h2,
+p,
+a {
+    padding: 12px;
+}
+
+#conoceMas img {
+    width: 100%;
+    padding: 0px;
+}
+
+.conoceMas-descripcion {
+    width: 100%;
+    background-color: #353a40;
+    color: #ffffff;
+    padding: 14px;
+}
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #1d3947;
+    text-align: center;
+}
+
+footer a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*Formulario*/
+
+form {
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+form input {
+    margin: 7px;
+    width: 300px;
+    height: 30px;
+}
+
+form textarea {
+    width: 48%;
+}
+
+
+/*Decoracion (Botones,hovers)*/
+
+footer a:hover {
+    color: cadetblue;
+}
+
+nav a:hover {
+    color: cadetblue;
+}
+
+#tickets {
+    color: rgb(30, 182, 30);
+}
+
+#ticketsButton {
+    background-color: #27a746;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.6s;
+    opacity: 0.9;
+}
+
+#ticketsButton:hover {
+    font-weight: bold;
+    font-size: x-large;
+    background-color: #1a5328;
+    color: #929292;
+}
+
+.buttonWhite {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.4s;
+    opacity: 0.9;
+}
+
+.buttonWhite:hover {
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #353a40;
+}
+
+#btnEnviar {
+    width: 500px;
+    height: 36px;
+    background-color: #72eb2c;
+    border-radius: 5px;
+    border: 0px gray solid;
+    font-size: medium;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#btnEnviar:hover {
+    border: #000000 2px solid;
+    font-weight: bold;
+}
+
+#subMensaje {
+    text-align: left;
+    margin-left: 320px;
+    opacity: 0.8;
+    color: gray;
+}
+
+.javascript {
+    font-size: x-smaller;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(255, 185, 104);
+    border-radius: 6px;
+    padding: 0px;
+    margin: 3px;
+    width: 76px;
+    height: 20px;
+}
+
+.react {
+    text-align: center;
+    background-color: rgb(7, 95, 177);
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 0px;
+    margin: 3px;
+    width: 70px;
+    height: 20px;
+    font-weight: bold;
+}
+
+.buisness {
+    color: #ffffff;
+    background-color: rgb(77, 77, 77);
+    border-radius: 6px;
+    padding: 0px;
+    margin: 3px;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.startups {
+    color: #ffffff;
+    background-color: rgb(175, 69, 69);
+    border-radius: 6px;
+    padding: 0px;
+    margin: 3px;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
