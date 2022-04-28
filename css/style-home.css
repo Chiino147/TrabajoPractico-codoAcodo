@@ -1,7 +1,8 @@
 /*Header */
 
-header {
+nav {
     width: 100%;
+    height: 80px;
     background-color: #353a40;
     display: flex;
     justify-content: flex-start;
@@ -9,13 +10,18 @@ header {
     align-items: center;
 }
 
-nav {
-    justify-items: right;
+.menu-item {
+    display: flex;
+    height: 100%;
+    display: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.menu a {
-    padding: 1px;
-    margin-left: 56px;
+.nav_input,
+.nav_label {
+    display: none;
 }
 
 #logo {
@@ -43,7 +49,7 @@ body {
     display: flex;
     color: #ffffff;
     width: 100%;
-    background-image: url(../img/Lugares/hawaii2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/Lugares/hawaii2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -313,4 +319,85 @@ nav a:hover {
     height: 20px;
     text-align: center;
     font-weight: bold;
+}
+
+@media (max-width:700px) {
+    nav {
+        width: 100vh;
+    }
+    .nav_label {
+        display: block;
+        cursor: pointer;
+    }
+    #menu-item {
+        background-color: #353a40;
+        position: fixed;
+        top: 80px;
+        bottom: 0px;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0% at center);
+    }
+    .nav_input:checked+#menu-item {
+        clip-path: circle(100% at center);
+    }
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 475px;
+        margin: auto;
+    }
+    main {
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #descripcion {
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h2 {
+        width: 300px;
+    }
+    #descripcion div {
+        margin: 0px;
+        padding: 0px;
+        width: 80vh;
+        height: 100vh;
+        text-align: right;
+        font-weight: 100%;
+        font-weight: bold;
+        font-family: Arial;
+        margin: 100px;
+    }
+    #conoceMas {
+        display: flex;
+        flex-direction: column;
+    }
+    #formulario {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        width: 100vh;
+    }
+    #menuFooter a {
+        font-size: 13%;
+    }
 }
