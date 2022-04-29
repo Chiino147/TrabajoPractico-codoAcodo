@@ -1,39 +1,56 @@
-/*Header */
+/*Nav*/
 
 nav {
     width: 100%;
     height: 80px;
     background-color: #353a40;
     display: flex;
-    justify-content: flex-start;
-    font-family: arial;
-    align-items: center;
-}
-
-.menu-item {
-    display: flex;
-    height: 100%;
-    display: 90%;
-    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
     justify-content: space-between;
-    align-items: center;
+    z-index: 5;
 }
 
-.nav_input,
-.nav_label {
-    display: none;
+.nav-item {
+    list-style: none;
+    color: aliceblue;
+    font-size: 16px;
+    margin: 0 10px;
+    line-height: 60px;
+    width: max-content;
+}
+
+.nav-item:hover {
+    color: white;
 }
 
 #logo {
+    color: white;
     display: flex;
-    margin-right: 45px;
-    color: #ffffff;
-    font-size: smaller;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    align-content: center;
 }
 
 #logo img {
-    width: 100px;
-    padding-left: 40px;
+    width: 30%;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 30px;
+}
+
+#boton-nav {
+    background: none;
+    color: white;
+    font-size: 30px;
+    border: none;
+    padding: 0 15px;
+    line-height: 60px;
+    display: none;
 }
 
 
@@ -41,7 +58,8 @@ nav {
 
 body {
     margin: 0px;
-    padding: 0px;
+    padding: 80px 0;
+    z-index: 3;
 }
 
 #descripcion {
@@ -176,6 +194,8 @@ footer {
     height: 60px;
     background-color: #1d3947;
     text-align: center;
+    position: relative;
+    bottom: 10px;
 }
 
 footer a {
@@ -322,35 +342,72 @@ nav a:hover {
 }
 
 @media (max-width: 700px) {
+    /*Nav Responsive*/
     nav {
-        width: 100vh;
-    }
-    .nav_label {
-        display: block;
-        cursor: pointer;
-    }
-    #menu-item {
-        background-color: #353a40;
-        position: fixed;
-        top: 80px;
-        bottom: 0px;
         width: 100%;
-        left: 0;
+        height: 80px;
         display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        justify-content: space-between;
+    }
+    .nav-item {
+        list-style: none;
+        color: aliceblue;
+        font-size: 18px;
+        margin: 0 10px;
+        line-height: 60px;
+        width: max-content;
+    }
+    .nav-item:hover {
+        color: white;
+    }
+    #logo {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
         align-items: center;
-        clip-path: circle(0% at center);
+        align-content: center;
     }
-    .nav_input:checked+#menu-item {
-        clip-path: circle(100% at center);
+    #logo img {
+        width: 20%;
     }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        background-color: rgba(29, 30, 90, 0.712);
+        position: fixed;
+        left: 0%;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+        height: calc(100%-60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    #boton-nav {
+        background: none;
+        color: white;
+        font-size: 30px;
+        border: none;
+        padding: 0 15px;
+        line-height: 60px;
+        display: block;
+    }
+    .nav-menu_visible {
+        left: 0;
+    }
+    /*Body*/
     .conteiner {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
-        width: 475px;
+        width: 480px;
         margin: auto;
     }
     main {
@@ -359,10 +416,76 @@ nav a:hover {
         flex-direction: column;
         justify-content: center;
     }
+    /*Tarjetas*/
+    .tarjeta {
+        width: 400px;
+        margin: 5px;
+    }
+    .presentacion-tarjeta {
+        display: flex;
+        text-align: center;
+        text-align: justify;
+        padding: 5px;
+        font-size: 25px;
+    }
+    .presentacion-tarjeta h3 {
+        text-align: left;
+    }
+    .informacion-tarjeta {
+        font-size: 30px;
+        text-align: center;
+        padding: 15px;
+        padding-top: 0px;
+    }
+    .javascript {
+        font-size: x-smaller;
+        font-weight: bold;
+        text-align: center;
+        background-color: rgb(255, 185, 104);
+        border-radius: 6px;
+        padding: 0px;
+        margin: 3px;
+        width: 140px;
+        height: 30px;
+    }
+    .react {
+        text-align: center;
+        background-color: rgb(7, 95, 177);
+        color: #ffffff;
+        border-radius: 6px;
+        padding: 0px;
+        margin: 3px;
+        width: 80px;
+        height: 30px;
+        font-weight: bold;
+    }
+    .buisness {
+        color: #ffffff;
+        background-color: rgb(77, 77, 77);
+        border-radius: 6px;
+        padding: 0px;
+        margin: 3px;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .startups {
+        color: #ffffff;
+        background-color: rgb(175, 69, 69);
+        border-radius: 6px;
+        padding: 0px;
+        margin: 3px;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    /*Descripcion*/
     #descripcion {
         margin: 0px;
         padding: 0px;
-        height: 100vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         width: 100vh;
@@ -370,6 +493,7 @@ nav a:hover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        font-size: 20px;
     }
     h2 {
         width: 300px;
@@ -398,6 +522,22 @@ nav a:hover {
         width: 100vh;
     }
     #menuFooter a {
-        font-size: 13%;
+        font-size: 15px;
+    }
+    /*Separadores*/
+    .separador p {
+        font-size: 22px;
+    }
+    .separador h2 {
+        font-size: 40px;
+        margin-left: 145px;
+    }
+    #A11 {
+        font-size: 22px;
+        margin-right: 180px;
+    }
+    #subMensaje {
+        padding: 0p;
+        margin-left: 100px;
     }
 }
