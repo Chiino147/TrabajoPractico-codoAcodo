@@ -22,8 +22,18 @@ nav {
     font-family: Arial;
 }
 
-.nav-item:hover {
-    color: white;
+.nav-item a:hover {
+    font-size: 17px;
+    transition: 0.6s;
+    opacity: 0.9;
+    color: rgb(245, 252, 150);
+}
+
+#tickets:hover {
+    font-size: 20px;
+    transition: 0.6s;
+    opacity: 0.9;
+    color: #9bffa9;
 }
 
 #logo {
@@ -80,7 +90,7 @@ body {
     font-family: sans-serif;
     width: 30%;
     text-align: right;
-    padding-left: 880px;
+    margin-left: 68%;
 }
 
 nav a {
@@ -565,34 +575,5 @@ nav a:hover {
     }
     .textFrom::placeholder {
         font-size: x-large;
-    }
-}
-
-@media (min-width: 700px) and (orientation: landscape) {
-    #descripcion {
-        width: 100%;
-        height: 400px;
-    }
-    #descripcion div {
-        margin: 0px;
-        padding: 0px;
-        width: 80vh;
-        height: 100vh;
-        text-align: right;
-        font-weight: 100%;
-        font-weight: bold;
-        font-family: Arial;
-        margin-left: 620px;
-    }
-    .buttonWhite,
-    #ticketsButton {
-        margin: 0px auto;
-    }
-    .conoceMas-descripcion {
-        width: 100%;
-        height: 372px;
-    }
-    #conoceMas div img {
-        height: 400px;
     }
 }
