@@ -19,6 +19,7 @@ nav {
     margin: 0 10px;
     line-height: 60px;
     width: max-content;
+    font-family: Arial;
 }
 
 .nav-item:hover {
@@ -180,10 +181,15 @@ a {
 }
 
 .conoceMas-descripcion {
-    width: 100%;
+    width: 972px;
     background-color: #353a40;
     color: #ffffff;
     padding: 14px;
+    font-family: Arial;
+}
+
+#conoceMas div img {
+    width: 1000px;
 }
 
 
@@ -342,6 +348,9 @@ nav a:hover {
 }
 
 @media (max-width: 700px) {
+    main {
+        width: 100%;
+    }
     /*Nav Responsive*/
     nav {
         width: 100%;
@@ -359,6 +368,7 @@ nav a:hover {
         margin: 0 10px;
         line-height: 60px;
         width: max-content;
+        font-weight: bold;
     }
     .nav-item:hover {
         color: white;
@@ -377,7 +387,7 @@ nav a:hover {
         display: flex;
         flex-direction: column;
         margin: 0px;
-        background-color: rgba(29, 30, 90, 0.712);
+        background-color: rgba(28, 28, 32, 0.952);
         position: fixed;
         left: 0%;
         top: 60px;
@@ -392,9 +402,9 @@ nav a:hover {
     #boton-nav {
         background: none;
         color: white;
-        font-size: 30px;
+        font-size: 40px;
         border: none;
-        padding: 0 15px;
+        padding: 0 5px;
         line-height: 60px;
         display: block;
     }
@@ -402,14 +412,6 @@ nav a:hover {
         left: 0;
     }
     /*Body*/
-    .conteiner {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        width: 480px;
-        margin: auto;
-    }
     main {
         width: 100vh;
         display: flex;
@@ -417,9 +419,17 @@ nav a:hover {
         justify-content: center;
     }
     /*Tarjetas*/
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 480px;
+        margin: 10px auto;
+    }
     .tarjeta {
         width: 400px;
-        margin: 5px;
+        margin: 20px auto;
     }
     .presentacion-tarjeta {
         display: flex;
@@ -483,12 +493,12 @@ nav a:hover {
     }
     /*Descripcion*/
     #descripcion {
+        width: 1000px;
         margin: 0px;
         padding: 0px;
         height: 60vh;
         display: flex;
         flex-direction: column;
-        width: 100vh;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -510,8 +520,13 @@ nav a:hover {
         margin: 100px;
     }
     #conoceMas {
+        margin: 0px;
         display: flex;
         flex-direction: column;
+    }
+    #conoceMas img {
+        width: 690px;
+        margin: 0px;
     }
     #formulario {
         width: 80%;
@@ -519,7 +534,9 @@ nav a:hover {
         flex-direction: column;
     }
     footer {
-        width: 100vh;
+        width: 1000px;
+        text-align: center;
+        margin-top: auto;
     }
     #menuFooter a {
         font-size: 15px;
@@ -527,17 +544,55 @@ nav a:hover {
     /*Separadores*/
     .separador p {
         font-size: 22px;
+        margin: 0px auto;
     }
     .separador h2 {
         font-size: 40px;
-        margin-left: 145px;
+        margin: 0px auto;
     }
     #A11 {
         font-size: 22px;
-        margin-right: 180px;
+        margin: 0px auto;
     }
     #subMensaje {
         padding: 0p;
         margin-left: 100px;
+    }
+    .textFrom {
+        margin: 5px;
+        color: black;
+        font-size: x-large;
+    }
+    .textFrom::placeholder {
+        font-size: x-large;
+    }
+}
+
+@media (min-width: 700px) and (orientation: landscape) {
+    #descripcion {
+        width: 100%;
+        height: 400px;
+    }
+    #descripcion div {
+        margin: 0px;
+        padding: 0px;
+        width: 80vh;
+        height: 100vh;
+        text-align: right;
+        font-weight: 100%;
+        font-weight: bold;
+        font-family: Arial;
+        margin-left: 620px;
+    }
+    .buttonWhite,
+    #ticketsButton {
+        margin: 0px auto;
+    }
+    .conoceMas-descripcion {
+        width: 100%;
+        height: 372px;
+    }
+    #conoceMas div img {
+        height: 400px;
     }
 }
