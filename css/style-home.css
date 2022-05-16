@@ -362,12 +362,12 @@ nav a:hover {
 }
 
 @media (max-width: 700px) {
-    main {
+    body {
         width: 100%;
     }
     /*Nav Responsive*/
     nav {
-        width: 100%;
+        width: 100vh;
         height: 80px;
         display: flex;
         position: fixed;
@@ -405,7 +405,7 @@ nav a:hover {
         position: fixed;
         left: 0%;
         top: 60px;
-        width: 100%;
+        width: 100vh;
         align-items: center;
         padding: 20px 0;
         height: calc(100%-60px);
@@ -425,7 +425,7 @@ nav a:hover {
     .nav-menu_visible {
         left: 0;
     }
-    /*Body*/
+    /*Main*/
     main {
         width: 100%;
         display: flex;
@@ -442,8 +442,8 @@ nav a:hover {
         margin: 10px auto;
     }
     .tarjeta {
-        width: 400px;
-        margin: 20px auto;
+        width: 420px;
+        margin: 10px 20vh;
     }
     .presentacion-tarjeta {
         display: flex;
@@ -469,7 +469,7 @@ nav a:hover {
         border-radius: 6px;
         padding: 0px;
         margin: 3px;
-        width: 140px;
+        width: 100px;
         height: 30px;
     }
     .react {
@@ -507,16 +507,10 @@ nav a:hover {
     }
     /*Descripcion*/
     #descripcion {
-        width: 1000px;
+        width: 100vh;
         margin: 0px;
         padding: 0px;
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: 60%;
         font-size: 20px;
     }
     h2 {
@@ -525,30 +519,54 @@ nav a:hover {
     #descripcion div {
         margin: 0px;
         padding: 0px;
-        width: 80vh;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         text-align: right;
         font-weight: 100%;
         font-weight: bold;
         font-family: Arial;
         margin: 100px;
     }
+    /*Conoce mas*/
     #conoceMas {
+        width: 100%;
         margin: 0px;
         display: flex;
         flex-direction: column;
     }
     #conoceMas img {
-        width: 690px;
+        width: 100vh;
         margin: 0px;
+        padding: 0;
     }
+    .conoceMas-descripcion {
+        width: 100vh;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+    }
+    /*Formulario*/
     #formulario {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
+    /*formulario inputs*/
+    #inputNombre {
+        width: 70vh;
+        height: 50px;
+    }
+    #inputApellido {
+        width: 70vh;
+        height: 50px;
+    }
+    #inputText {
+        width: 70vh;
+        height: 100px;
+    }
+    /*Footer*/
     footer {
-        width: 1000px;
+        width: 100vh;
         text-align: center;
         margin-top: auto;
     }
@@ -557,16 +575,17 @@ nav a:hover {
     }
     /*Separadores*/
     .separador p {
+        width: 50vh;
         font-size: 22px;
-        margin: 0px auto;
+        margin: 0px 50%;
     }
     .separador h2 {
         font-size: 40px;
-        margin: 0px auto;
+        margin: 0px 50%;
     }
     #A11 {
         font-size: 22px;
-        margin: 0px auto;
+        margin: 0px 50%;
     }
     #subMensaje {
         padding: 0p;
@@ -579,5 +598,18 @@ nav a:hover {
     }
     .textFrom::placeholder {
         font-size: x-large;
+    }
+    /*formulario inputs*/
+    #inputNombre {
+        width: 70vh;
+        height: 50px;
+    }
+    #inputApellido {
+        width: 70vh;
+        height: 50px;
+    }
+    #inputText {
+        width: 70vh;
+        height: 100px;
     }
 }
