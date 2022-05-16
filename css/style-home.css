@@ -30,10 +30,10 @@ nav {
 }
 
 #tickets:hover {
-    font-size: 20px;
-    transition: 0.6s;
-    opacity: 0.9;
-    color: #9bffa9;
+    font-size: 20px!important;
+    transition: 0.6s!important;
+    opacity: 0.9!important;
+    color: #9bffa9 !important;
 }
 
 #logo {
@@ -64,6 +64,15 @@ nav {
     display: none;
 }
 
+nav a {
+    font-size: medium;
+    padding-right: 50px;
+    margin: 3px;
+    text-align: right;
+    text-decoration: none;
+    color: #ffffff;
+}
+
 
 /*Div descripcion*/
 
@@ -91,15 +100,6 @@ body {
     width: 30%;
     text-align: right;
     margin-left: 68%;
-}
-
-nav a {
-    font-size: medium;
-    padding-right: 50px;
-    margin: 3px;
-    text-align: right;
-    text-decoration: none;
-    color: #ffffff;
 }
 
 
@@ -249,7 +249,7 @@ nav a:hover {
 }
 
 #tickets {
-    color: rgb(30, 182, 30);
+    color: rgb(30, 182, 30)!important;
 }
 
 #ticketsButton {

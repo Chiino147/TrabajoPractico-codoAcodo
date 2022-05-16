@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-tickets.css">
+    <title>Conferencias Bs. As.</title>
+    <link rel="shortcut icon" href="./img/Logos/favicion.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f6f899d5f4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="./img/codoacodo.png" alt="logoCodo">
+                <h1>Conf Bs As</h1>
+            </div>
+            <button id="boton-nav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu ">
+                <li class="nav-item"><a href="index.html#descripcion">La conferencia</a></li>
+                <li class="nav-item"><a href="index.html#card-oradores">Los oradores</a></li>
+                <li class="nav-item"><a href="index.html#conoceMas">El lugar y la fecha</a></li>
+                <li class="nav-item"><a href="index.html#formulario">Conviertete en orador</a></li>
+                <li class="nav-item">
+                    <a id="tickets" href="index.html#descripcion">Comprar tickets</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div id="descuentos">
+            <div class="tipoDescuentos" style="border:2px solid blue">
+                <h2 class="tipo-desct">Estudiantes</h2>
+                <p>Tienen un descuento</p>
+                <p class="cant-desct" style="font-weight:bold;">80%</p>
+                <p style="color:rgba(128, 128, 128, 0.623)">*Presentar documentacion</p>
+            </div>
+            <div class="tipoDescuentos" style="border:2px solid green">
+                <h2 class="tipo-desct">Trainee</h2>
+                <p>Tienen un descuento</p>
+                <p class="cant-desct" style="font-weight:bold;">50%</p>
+                <p style="color:rgba(128, 128, 128, 0.623)">*Presentar documentacion</p>
+            </div>
+            <div class=" tipoDescuentos " style="border:2px solid rgba(223, 223, 6, 0.712)">
+                <h2 class="tipo-desct ">Junior</h2>
+                <p>Tienen un descuento</p>
+                <p class="cant-desct " style="font-weight:bold;">15%</p>
+                <p style="color:rgba(128, 128, 128, 0.623)">*Presentar documentacion</p>
+            </div>
+        </div>
+        <div id="formTickets">
+            <p>venta</p>
+            <h1>Valor de ticket $200</h1>
+            <form action="">
+                <input type="text " id="clienteNombre" placeholder="Nombre ">
+                <input type="text " name=" " id="clienteApellido" placeholder="Apellido ">
+                <br>
+                <input type="email " name=" " id="clienteCorreo" placeholder="correo ">
+                <br>
+                <input type="text " name=" " id="clienteCantidad" placeholder="cantidad ">
+
+                <select name=" " id="clienteOpcion">
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                    </select>
+                <br>
+                <div id="total" class="ocultado">
+                    <p id="mostrarTotal">kkk</p>
+
+                </div>
+                <div>
+                    <br><br>
+                    <button id="formBorrar" class="btn">Borrar</button>
+                    <button id="formResumen" class="btn">Resumen</button>
+
+                </div>
+
+            </form>
+            <br><br>
+        </div>
+        <script src="./js/comprar-tickets.js "></script>
+    </main>
+    <footer>
+        <div id="menuFooter ">
+            <a href=" ">Preguntas Frecuentes</a>
+            <a href=" ">Contáctanos</a>
+            <a href=" ">Prensa</a>
+            <a href=" ">Conferencias</a>
+            <a href=" ">Terminos y condiciones</a>
+            <a href=" ">Privacidad</a>
+            <a href=" ">Estudiantes</a>
+
+        </div>
+    </footer>
+</body>
+
+</html>
