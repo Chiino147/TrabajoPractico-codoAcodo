@@ -427,7 +427,7 @@ nav a:hover {
     }
     /*Body*/
     main {
-        width: 100vh;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -438,7 +438,7 @@ nav a:hover {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
-        width: 480px;
+        width: 100%;
         margin: 10px auto;
     }
     .tarjeta {
