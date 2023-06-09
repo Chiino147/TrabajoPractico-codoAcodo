@@ -57,15 +57,15 @@
         <div id="formTickets">
             <p>venta</p>
             <h1>Valor de ticket $200</h1>
-            <form action="">
-                <input type="text " id="clienteNombre" placeholder="Nombre ">
-                <input type="text " name=" " id="clienteApellido" placeholder="Apellido ">
+            <form action="./php/insert.php">
+                <input type="text " name="nombre" id="clienteNombre" placeholder="Nombre ">
+                <input type="text " name="apellido" id="clienteApellido" placeholder="Apellido ">
                 <br>
-                <input type="email " name=" " id="clienteCorreo" placeholder="correo ">
+                <input type="email " name="correo" id="clienteCorreo" placeholder="correo ">
                 <br>
-                <input type="text " name=" " id="clienteCantidad" placeholder="cantidad ">
+                <input type="text " name="entradas" id="clienteCantidad" placeholder="cantidad ">
 
-                <select name=" " id="clienteOpcion">
+                <select name="tipo" id="clienteOpcion">
                         <option value="estudiante">Estudiante</option>
                         <option value="trainee">Trainee</option>
                         <option value="junior">Junior</option>
@@ -77,6 +77,7 @@
                 </div>
                 <div>
                     <br><br>
+                    <input type="submit" value="enviar">
                     <button id="formBorrar" class="btn">Borrar</button>
                     <button id="formResumen" class="btn">Resumen</button>
 
